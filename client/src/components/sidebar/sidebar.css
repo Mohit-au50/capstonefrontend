@@ -1,0 +1,71 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 4rem;
+  width: 360px;
+  height: calc(100vh - 4rem);
+  padding-inline: 1rem 76px;
+  background-color: rgba(230, 230, 250, 0.5);
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  display: block;
+  position: relative;
+  line-height: 2.8rem;
+  font-weight: bold;
+}
+
+.sidebar ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+  width: 0.25rem;
+  height: 80%;
+  background-color: dodgerblue;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: none;
+}
+.sidebar ul hr {
+  height: 0.1rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  margin-block: 0.25rem;
+  background-color: lightgrey;
+}
+.sidebar ul li span {
+  font-size: 1.3rem;
+  padding-right: 1rem;
+  color: dodgerblue;
+  font-weight: 500;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #444;
+}
+.sidebar .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+  font-size: 0.74rem;
+  line-height: 1.2rem;
+  padding-block: 0.4rem;
+  color: grey;
+  font-weight: 500;
+  padding-inline: 1rem 76px;
+}
+.bottom a {
+  text-decoration: none;
+  color: grey;
+}
+.bottom a:hover {
+  text-decoration: underline;
+}

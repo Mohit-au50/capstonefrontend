@@ -1,0 +1,96 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.09rem solid lightgrey;
+  z-index: 1;
+  background-color: #fff;
+}
+.header .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .logo {
+  width: 9rem;
+}
+.nav .logo img {
+  width: 9rem;
+}
+
+.nav .search label {
+  display: block;
+  position: relative;
+  width: 37rem;
+  border-radius: 5rem;
+  padding-block: 0.65rem;
+  overflow: hidden;
+  background-color: lavender;
+}
+.nav .search label span {
+  padding-left: 0.65rem;
+  font-size: 1.1rem;
+}
+.search label input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 94%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.nav .social {
+  width: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social > div {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: lavender;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: grid;
+  place-items: center;
+}
+.social .user {
+  background: linear-gradient(135deg, lightgreen, lightcoral);
+
+}
+.social .user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.model{
+    position: absolute;
+    top: 4rem;
+    right: 1.2rem;
+    background-color: #fff;
+    width: max-content;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem 0;
+    padding: 0.75rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0px 5px 7px 9px rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+
+.model .link {
+    text-decoration: none;
+    color: inherit;
+}
